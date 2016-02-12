@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:edge
+FROM gliderlabs/alpine
 MAINTAINER Christoph Wiechert <wio@psitrax.de>
 
 RUN apk update \
