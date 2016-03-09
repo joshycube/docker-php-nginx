@@ -11,6 +11,9 @@ fi
 mkdir -p /DATA/logs/php-fpm
 php-fpm
 
+mkdir -p /DATA/sites-available
+mkdir -p /DATA/sites-enabled
+
 # start nginx
 mkdir -p /DATA/logs/nginx
 mkdir -p /tmp/nginx
