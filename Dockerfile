@@ -3,9 +3,9 @@ MAINTAINER Christoph Wiechert <wio@psitrax.de>
 
 RUN apk update \
     && apk add bash nginx ca-certificates \
-    php-fpm php-json php-zlib php-xml php-pdo php-phar php-openssl \
+    php-cli php-fpm php-json php-zlib php-xml php-pdo php-phar php-openssl \
     php-pdo_mysql php-mysqli \
-    php-gd php-iconv php-mcrypt php-intl 
+    php-gd php-iconv php-mcrypt php-intl php-ctype php-dom php-opcache
 
 # fix php-fpm "Error relocating /usr/bin/php-fpm: __flt_rounds: symbol not found" bug
 RUN apk add -u musl
